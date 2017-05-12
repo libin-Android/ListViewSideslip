@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_selector"
+    tools:context="com.example.administrator.hotpatch.LVSlideslipAndCheckBox">
+    <Button
+        android:id="@+id/bj"
+        android:text="编辑"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <com.yydcdut.sdlv.SlideAndDragListView
+        android:id="@+id/lv_edit_cb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/black"
+        android:dividerHeight="0.5dip"
+        android:paddingLeft="8dip"
+        android:layout_below="@id/bj"
+        android:paddingRight="8dip"
+        android:listSelector="@drawable/item_selector"
+        >
+    </com.yydcdut.sdlv.SlideAndDragListView>
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/bj"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:scrollbars="none"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="删除"
+        android:visibility="gone"/>
+</RelativeLayout>
